@@ -39,6 +39,19 @@ Some Linux basic command for daily use
 
 
 ## **Some Linux Basic Command.**
-1. Upload file from local pc to server `scp -r /path/to/my/files root@:0.0.0.0:/path/on/my/server`
-2. unzip a zip file first `sudo apt install unzip` then `unzip test.zip`
+1. **Upload file from local pc to server** `scp -r /path/to/my/files root@:0.0.0.0:/path/on/my/server`
+2. **Unzip a zip file first** `sudo apt install unzip` then `unzip test.zip`
+3. **Installing Node.js with Apt Using a NodeSource PPA**
+    
+   i. `curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh`
+
+   ii. `nano nodesource_setup.sh` just see
+   
+   iii. `sudo bash nodesource_setup.sh` 
+
+   iv. `sudo apt install nodejs`
+
+
+
+   
 
