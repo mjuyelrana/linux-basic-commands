@@ -51,6 +51,8 @@ Some Linux basic command for daily use
 
    iv. `sudo apt install nodejs`
 
+15. **After add proxy to transfer http request to another port** `a2enmod proxy_http proxy headers session expires`
+
 
 
    
