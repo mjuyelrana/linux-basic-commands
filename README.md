@@ -53,6 +53,24 @@ Some Linux basic command for daily use
 
 15. **After add proxy to transfer http request to another port** `a2enmod proxy_http proxy headers session expires`
 
+16. **Change Your default php version** `sudo update-alternatives --config php`
+~~~~
+There are 7 choices for the alternative php (providing /usr/bin/php).
+
+  Selection    Path             Priority   Status
+------------------------------------------------------------
+  0            /usr/bin/php8.0   80        auto mode
+  1            /usr/bin/php5.6   56        manual mode
+  2            /usr/bin/php7.0   70        manual mode
+* 3            /usr/bin/php7.1   71        manual mode
+  4            /usr/bin/php7.2   72        manual mode
+  5            /usr/bin/php7.3   73        manual mode
+  6            /usr/bin/php7.4   74        manual mode
+  7            /usr/bin/php8.0   80        manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: Here type the selection number and press enter
+~~~~
+
 
 
    
