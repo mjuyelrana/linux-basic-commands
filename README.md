@@ -1,9 +1,134 @@
+# Linux directory architecture [More Details](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
+<img src="architecture.png">
+
+| Directory | Details [source](https://www.serverkaka.com/2018/01/key-locations-in-linux-file-system_21.html)                        |
+|-----------|------------------------------------------------------------------------------------------------------------------------|
+| /         | Primary hierarchy root and root directory of the entire file system hierarchy.                                         |
+| /bin      | Essential software typically needed to get the system running.                                                         |
+| /boot     | Files related to the boot menu/loader. Holds the file to boot the operating system.                                    |
+| /dev      | Virtual files representing hardware devices.                                                                           |
+| /etc      | Contains all the configuration files.                                                                                  |
+| /home     | User's personal folder. If we create user, it will create a folder inside the home directory using that username.      |
+| /lib      | Support or library files required by software or applications. Kernel modules and shared libraries.                    |
+| /media    | Contains sub folders where storage device can be mounted. Temporary removable devices eg. CD RAM, USB, Floppy Disk.    |
+| /proc     | Virtual folder containing files representing stats and settings.                                                       |
+| /root     | Personal folder for root user.                                                                                         |
+| /sbin     | Essential software for system maintenance, used only for the root user.                                                |
+| /tmp      | Temporary files/folders.                                                                                               |
+| /usr      | Essentially, subdirectories containing most software used on the system, including system libraries and documentation. |
+| /var      | Data that is vital to the running of the system and that is constantly being updated.                                  |
+
+## Some Centos 7 command
+### 1. Graphical interface
+```shell
+ctrl+alt+f1
+```
+### 2. Command line interface 
+```shell
+ctrl+alt+f2
+```
+### 3. Login with same user as Command line interface
+```shell
+ctrl+alt+f3
+```
+### 4. To clear the screen 
+```shell
+ctrl+l
+```
+### 5. To see the hosts
+```shell
+nano /etc/hosts
+```
+### 6. To see the terminal 
+```shell
+tty
+```
+### 7. To see the CentOS version
+```shell
+hostnamectl 
+```
+### 8. Show Files and directories 
+| Commands            | Details                                                                     |
+|---------------------|-----------------------------------------------------------------------------|
+| ls -a               | Show all including hidden files, not show file size                         |
+| ls -la              | List all including hidden files, with bytes formatted file size             |
+| ls -lh              | List only human created files, with well formatted file size                |
+| ls -lSh             | List only human created files, with well formatted file size with sort      |
+| ls -i               | Show files with id number                                                   |
+| ls -li              | List files with id number                                                   |
+| ls -F               | Show the all folders                                                        |
+| ls -Fl              | List the all folders                                                        |
+| ls -r               | Show all files in reverse order                                             |
+| ls -lr              | List all files in reverse order                                             |
+| ls -R               | Show subdirectory recursively                                               |
+| dir -Shli           | List directory with shorted, human and id set                               |
+| ls -ltr             | Show the file and directory with latest modification of date and time       |
+| ls -l director_name | To show the file of a specific directory                                    |
+| dir -l /            | To show the all directories inside root directory                           |
+| dir -al /           | To show the all directories inside root directory with hidden files         |
+| dir -nl --author    | To show the all files group by user                                         |
+| dir -amil           | To show the all files and folders that have hidden files                    |
+| dir -amli /         | To show the all files and folders that have hidden files inside root folder |
+| dir -dl /etc        | Show the directory with permission, who is the owner of that directory      |
+
+### 9. Show the block device as tree structure and list structure.
+```shell
+lsblk 
+lsblk -l
+```
+### 10. History or show to all executed command
+```shell
+history 
+```
+### 11. Create a directory 
+```shell
+mkdir directory_name
+mkdir -p dir1/dir2/dir3 [To create nested directory]
+```
+### 12. Create a file 
+```shell
+touch file_name
+touch file{1..5}.txt [Create files with file name = file1.txt to file5.txt]
+```
+### 13. See the file content
+```shell
+cat file_name
+```
+### 14. To add some data in a file
+```shell
+cat > file_name
+
+Write something and press ctrl+d to close.
+```
+### 15. To join multiple files in one file
+```shell
+cat file1, file2, file3 > file_name.txt
+```
+### 16. To see the calendar 
+```shell
+call
+```
+### 17. To see calendar for a specific month and year
+```shell
+cal 09 1994
+```
+### 18. To see the today's date 
+```shell
+date
+```
+### 19. To get the basic calculator 
+```shell
+bc
+```
+
+
+
+
+
 # Linux-Basic-Command
 Some Linux basic command for daily use
 
-
 ## **Install Full Webserver apache, php, mysql, phpmyadmin on ubuntu.**
-
 0. **First Update** `sudo apt-get update`
 1. **Install Apache** `sudo apt-get install apache2`
 2. **Apache Config Test** `sudo apache2ctl configtest`
@@ -42,12 +167,12 @@ Some Linux basic command for daily use
 1. **Upload file from local pc to server** `scp -r /path/to/my/files root@:0.0.0.0:/path/on/my/server`
 2. **Unzip a zip file first** `sudo apt install unzip` then `unzip test.zip`
 3. **Installing Node.js with Apt Using a NodeSource PPA**
-    
+
    i. `curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh`
 
    ii. `nano nodesource_setup.sh` just see
-   
-   iii. `sudo bash nodesource_setup.sh` 
+
+   iii. `sudo bash nodesource_setup.sh`
 
    iv. `sudo apt install nodejs`
 
@@ -93,4 +218,7 @@ sudo apt install php8.0 php8.0-fpm php8.0-mysql php8.0-sqlite3 php8.0-bcmath php
 
 
    
+
+
+
 

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Linux-Basic-Command.iml" filepath="$PROJECT_DIR$/.idea/Linux-Basic-Command.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/linux-learning.iml" filepath="$PROJECT_DIR$/.idea/linux-learning.iml" />
     </modules>
   </component>
 </project>
