@@ -121,10 +121,6 @@ date
 bc
 ```
 
-
-
-
-
 # Linux-Basic-Command
 Some Linux basic command for daily use
 
@@ -164,11 +160,12 @@ Some Linux basic command for daily use
 
 
 ## **Some Linux Basic Command.**
-1. **Upload file from local pc to server** `scp -r /path/to/my/files root@:0.0.0.0:/path/on/my/server`
-2. **Unzip a zip file first** `sudo apt install unzip` then `unzip test.zip`
-3. **Installing Node.js with Apt Using a NodeSource PPA**
+1. **Upload file from local pc to remote** `scp -r /path/to/my/files root@0.0.0.0:/path/on/my/server`
+2. **Download file from remote to local pc** `scp -r root@0.0.0.0:/path/on/my/server/file /path/to/my/path`
+3. **Unzip a zip file first** `sudo apt install unzip` then `unzip test.zip`
+4. **Installing Node.js with Apt Using a NodeSource PPA**
 
-   i. `curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh`
+   i. `curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh`
 
    ii. `nano nodesource_setup.sh` just see
 
@@ -195,7 +192,6 @@ There are 7 choices for the alternative php (providing /usr/bin/php).
 
 Press <enter> to keep the current choice[*], or type selection number: Here type the selection number and press enter
 ~~~~
-
 17. **Install multiple version of php**
 ~~~~
 sudo apt install php5.6 php5.6-fpm php5.6-mysql php5.6-sqlite3 php5.6-bcmath php5.6-gd php5.6-odbc php5.6-sybase php5.6-bz2 php5.6-gmp php5.6-opcache php5.6-tidy php5.6-cgi php5.6-imap php5.6-pgsql php5.6-xml php5.6-cli php5.6-interbase php5.6-phpdbg php5.6-xmlrpc php5.6-common php5.6-intl php5.6-pspell php5.6-xsl php5.6-curl php5.6-json php5.6-readline php5.6-zip php5.6-dba php5.6-ldap php5.6-recode php5.6-dev php5.6-mbstring php5.6-snmp php5.6-enchant php5.6-mcrypt php5.6-soap
@@ -211,7 +207,6 @@ sudo apt install php7.3 php7.3-fpm php7.3-mysql php7.3-sqlite3 php7.3-bcmath php
 sudo apt install php7.4 php7.4-fpm php7.4-mysql php7.4-sqlite3 php7.4-bcmath php7.4-gd php7.4-odbc php7.4-sybase php7.4-bz2 php7.4-gmp php7.4-opcache php7.4-tidy php7.4-cgi php7.4-imap php7.4-pgsql php7.4-xml php7.4-cli php7.4-interbase php7.4-phpdbg php7.4-xmlrpc php7.4-common php7.4-intl php7.4-pspell php7.4-xsl php7.4-curl php7.4-json php7.4-readline php7.4-zip php7.4-dba php7.4-ldap php7.4-dev php7.4-mbstring php7.4-snmp php7.4-enchant php7.4-mcrypt php7.4-soap
 
 sudo apt install php8.0 php8.0-fpm php8.0-mysql php8.0-sqlite3 php8.0-bcmath php8.0-gd php8.0-odbc php8.0-sybase php8.0-bz2 php8.0-gmp php8.0-opcache php8.0-tidy php8.0-cgi php8.0-imap php8.0-pgsql php8.0-xml php8.0-cli php8.0-interbase php8.0-phpdbg php8.0-xmlrpc php8.0-common php8.0-intl php8.0-pspell php8.0-xsl php8.0-curl  php8.0-readline php8.0-zip php8.0-dba php8.0-ldap php8.0-dev php8.0-mbstring php8.0-snmp php8.0-enchant php8.0-mcrypt php8.0-soap
-
 ~~~~
 
 
